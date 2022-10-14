@@ -49,8 +49,10 @@ const removeFirst = document.getElementById('remove-first');
 removeFirst.addEventListener('click', () => {
   /*-------------------- Select the first dog card --------------------- */
   // Your code here
+  const firstDog = document.querySelector('ul').firstChild;
   /*-------------------- Remove the first dog card --------------------- */
   // Your code here
+  document.querySelector('ul').removeChild(firstDog);
 });
 
 /************************** REMOVE LAST DOG BUTTON ***************************/
