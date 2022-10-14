@@ -16,6 +16,27 @@ add.addEventListener('click', async () => {
             file to create a new image with the url) */
     // Your code here
 
+    // <ul>
+    //   <li>
+    //     <figure>
+    //       <img src='https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg' />
+    //       <figcaption>hound-afghan</figcaption>
+    //     </figure>
+    //   </li>
+    // </ul>;
+    const ul = document.querySelector('ul');
+    const li = document.createElement('li');
+    const figure = document.createElement('figure');
+    const img = document.createElement('img');
+    img.src = url;
+    const figCaption = document.createElement('figcaption');
+    figCaption.innerText = breed;
+    figure.appendChild(img);
+    figure.appendChild(figCaption);
+    li.appendChild(figure);
+    li.appendChild(figure);
+    ul.appendChild(li);
+
     /* Add the new dog card as a child to the ul in the .gallery element */
     // Your code here
   } catch (e) {
