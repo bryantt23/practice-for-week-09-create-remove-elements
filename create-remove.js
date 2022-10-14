@@ -47,19 +47,24 @@ add.addEventListener('click', async () => {
 /************************** REMOVE FIRST DOG BUTTON **************************/
 const removeFirst = document.getElementById('remove-first');
 removeFirst.addEventListener('click', () => {
+  const ul = document.querySelector('ul');
   /*-------------------- Select the first dog card --------------------- */
   // Your code here
   const firstDog = document.querySelector('ul').firstChild;
   /*-------------------- Remove the first dog card --------------------- */
   // Your code here
-  document.querySelector('ul').removeChild(firstDog);
+  ul.removeChild(firstDog);
 });
 
 /************************** REMOVE LAST DOG BUTTON ***************************/
 const removeLast = document.getElementById('remove-last');
 removeLast.addEventListener('click', () => {
+  const ul = document.querySelector('ul');
+  const liList = ul.childNodes;
   /*-------------------- Select the last dog card ----------------------- */
   // Your code here
+  const lastdog = liList[liList.length - 1];
   /*-------------------- Remove the last dog card ----------------------- */
   // Your code here
+  ul.removeChild(lastdog);
 });
