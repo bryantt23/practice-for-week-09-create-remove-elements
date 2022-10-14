@@ -9,6 +9,7 @@ add.addEventListener('click', async () => {
 
     /*--------------- Get breed (Hint: Parse from URL) ---------------- */
     // Your code here
+    const breed = url.split('/')[4];
 
     /*------------ Create new dog card with the url above ------------- */
     /* (use the HTML structure for the current dog image in the index.html
